@@ -17,7 +17,7 @@
 ## 1. 프로젝트 한 줄 요약
 해외여행 출발 전 D-day 준비를 동행자와 함께 관리하고, AI 준비 에이전트가 오늘 할 일을 정리해 주는 Android 앱.
 SVC Seoul AI 해커톤 본선 진출 · 팀 **여행의 숲** · 과제 "출발 전 D-day 점검 에이전트".
-기능·구조·실행 방법은 [README.md](README.md) 참고.
+기능·구조·실행 방법은 [README.md](../../README.md) 참고.
 
 ## 2. 일정 (해커톤 본선)
 | 날짜 | 내용 |
@@ -50,11 +50,11 @@ SVC Seoul AI 해커톤 본선 진출 · 팀 **여행의 숲** · 과제 "출발 
 **지도 (무조건 무료)**
 - 과거 요금 폭탄 경험 → 앱 안 장소 검색·지오코딩·길찾기 API **사용 안 함**, 맵 ID 없음
 - 장소 추가: 구글맵 앱 "공유 → Checkmate", 링크 붙여넣기, 지도 길게 눌러 핀
-- 구글 클라우드: 지도 SDK 일일 상한 + 예산 1원 감지 시 결제 자동 차단 함수 ([infra/billing-killswitch](infra/billing-killswitch))
+- 구글 클라우드: 지도 SDK 일일 상한 + 예산 1원 감지 시 결제 자동 차단 함수 ([infra/billing-killswitch](../../infra/billing-killswitch))
 
 **수익화**
 - 해커톤 기간에는 결제·제휴·광고 없음, 모든 기능 개방
-- 이후 계획(손해 없는 구조만, 개인 데이터 판매 금지, 광고는 배너·보상형 정도): [docs/revenue-plan.md](docs/revenue-plan.md)
+- 이후 계획(손해 없는 구조만, 개인 데이터 판매 금지, 광고는 배너·보상형 정도): [docs/revenue-plan.md](../revenue-plan.md)
 - 가격안: 여행 1회권 4,900원 + 연간 19,900원, 결제자 = 부모님 여행을 챙기는 자녀
 - 제휴(CPS/CPA)·B2B 정리와 연락 메일은 **해커톤 끝난 뒤** 진행. 메일은 초안 → 사용자 확인 → 발송
 
@@ -86,8 +86,8 @@ SVC Seoul AI 해커톤 본선 진출 · 팀 **여행의 숲** · 과제 "출발 
 - [ ] 현장에서 운영진에게 확인: 행사 키 사용 한도, 행사 후 사용 가능 기간
 
 **출시 준비**
-- [ ] 데이터 검증: [DATA_TODO.md](DATA_TODO.md) 전 항목 공식 출처 확인 후 `verified: true`
-- [ ] 개인정보처리방침([docs/privacy-policy.md](docs/privacy-policy.md)) 빈칸 채워 공개 페이지 게시
+- [ ] 데이터 검증: [DATA_TODO.md](../../DATA_TODO.md) 전 항목 공식 출처 확인 후 `verified: true`
+- [ ] 개인정보처리방침([docs/privacy-policy.md](../privacy-policy.md)) 빈칸 채워 공개 페이지 게시
 - [ ] Play Console 본인 확인 → AAB 비공개 테스트 업로드 → 테스터 12명 × 14일
 - [ ] 업로드 후 Play 앱 서명 SHA-1을 지도 키 제한에 추가
 - [ ] 앱 아이콘을 디자이너 결과물로 교체 (지금은 임시)

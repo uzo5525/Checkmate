@@ -48,5 +48,4 @@ example
 release/
 
 # 공개 저장소에서 제외
-design_ref/
 supabase/.temp/
