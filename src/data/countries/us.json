@@ -1,0 +1,63 @@
+{
+  "country": {
+    "code": "US",
+    "name": "미국",
+    "flag": "🇺🇸",
+    "currency": "USD",
+    "currencyName": "미국 달러",
+    "plug": "A·B타입(11자)",
+    "voltage": "120V",
+    "sampleCity": "뉴욕",
+    "center": { "lat": 40.7128, "lng": -74.006 },
+    "entryDocName": "ESTA 승인 확인서",
+    "passport": { "minMonths": 0, "from": "exit", "sourceName": "주한 미국대사관", "sourceUrl": "https://kr.usembassy.gov/ko/" },
+    "embassyName": "주미국 대한민국 대사관·총영사관",
+    "embassyUrl": "https://overseas.mofa.go.kr/us-ko/index.do",
+    "weatherName": "미국 국립기상청",
+    "weatherUrl": "https://www.weather.gov/"
+  },
+  "_note": "모든 항목은 초안입니다(verified=false). DATA_TODO.md 참고.",
+  "items": [
+    {
+      "id": "us.visa",
+      "title": "비자·ESTA 확인",
+      "description": "국적과 체류 목적에 따라 비자가 필요합니다. 주한 미국대사관 안내를 확인하세요.",
+      "byNationality": {
+        "KR": {
+          "description": "대한민국은 미국 비자면제프로그램(VWP) 대상국으로, 관광·상용 단기 체류(최대 90일)는 비자 대신 ESTA 승인을 받아야 하는 것으로 알려져 있습니다. 전자여권이 필요하고, 과거 방문 국가 등에 따라 ESTA가 거절되면 비자를 신청해야 합니다."
+        }
+      },
+      "dueOffset": 30,
+      "scope": "personal",
+      "category": "entry",
+      "sourceUrl": "https://kr.usembassy.gov/ko/visas-ko/",
+      "sourceName": "주한 미국대사관 비자 안내",
+      "verified": false,
+      "required": true
+    },
+    {
+      "id": "us.entry_card",
+      "title": "ESTA 신청 (공식 사이트에서만)",
+      "description": "ESTA는 출발 최소 며칠 전에 미리 신청하는 것이 권장됩니다. 수수료를 더 받는 비공식 대행 사이트가 많으니 반드시 미국 관세국경보호청(CBP) 공식 사이트나 공식 앱에서 신청하세요.",
+      "dueOffset": 14,
+      "scope": "personal",
+      "category": "entry",
+      "sourceUrl": "https://esta.cbp.dhs.gov/",
+      "sourceName": "미국 CBP ESTA 공식 사이트",
+      "verified": false,
+      "required": true
+    },
+    {
+      "id": "us.prohibited_items",
+      "title": "반입 금지·신고 품목 확인",
+      "description": "미국은 육류·육가공품, 생과일·채소 등 농축산물 반입을 엄격히 제한하고, 식품은 신고하지 않으면 벌금을 받을 수 있는 것으로 알려져 있습니다. 일정 금액 이상의 현금도 신고 대상입니다.",
+      "dueOffset": 7,
+      "scope": "personal",
+      "category": "customs",
+      "sourceUrl": "https://www.cbp.gov/travel/clearing-cbp/bringing-agricultural-products-united-states",
+      "sourceName": "미국 CBP 농축산물 반입 안내",
+      "verified": false,
+      "required": true
+    }
+  ]
+}

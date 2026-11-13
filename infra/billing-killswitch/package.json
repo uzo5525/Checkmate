@@ -1,0 +1,10 @@
+{
+  "name": "readygo-billing-killswitch",
+  "private": true,
+  "main": "index.js",
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "@google-cloud/billing": "^6.2.0",
+    "@google-cloud/functions-framework": "^5.0.5"
+  }
+}

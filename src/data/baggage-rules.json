@@ -1,0 +1,100 @@
+{
+  "_note": "항공 반입 규정 초안입니다. verified=false 항목은 공식 출처 확인 전이며 checkedAt 이 null 입니다. 항공사·국가별로 더 엄격할 수 있습니다.",
+  "version": "2026-10-draft",
+  "categories": {
+    "powerbank": {
+      "label": "보조배터리",
+      "inputs": [
+        { "key": "mAh", "label": "용량", "unit": "mAh", "placeholder": "예: 10000" },
+        { "key": "voltage", "label": "정격 전압", "unit": "V", "default": 3.7, "hint": "표기가 없으면 3.7V" }
+      ],
+      "cabinMaxWh": 100,
+      "approvalMaxWh": 160,
+      "checkedAllowed": false,
+      "notes": [
+        "보조배터리는 위탁수하물에 넣을 수 없습니다.",
+        "100Wh 초과 ~ 160Wh 이하는 항공사 승인이 필요하며 보통 1인 2개까지 허용됩니다."
+      ],
+      "sourceName": "IATA 리튬배터리 안내 / 국토교통부 항공위험물 기준",
+      "sourceUrl": "https://www.iata.org/en/programs/cargo/dgr/lithium-batteries/",
+      "checkedAt": null,
+      "verified": false
+    },
+    "liquid": {
+      "label": "액체류 (화장품·음료 등)",
+      "inputs": [{ "key": "ml", "label": "용기당 용량", "unit": "ml", "placeholder": "예: 150" }],
+      "cabinMaxMlPerContainer": 100,
+      "cabinBagNote": "100ml 이하 용기를 1L 이하 투명 지퍼백 1개에 담아야 합니다.",
+      "checkedAllowed": true,
+      "notes": ["의약품·유아식은 예외가 적용될 수 있으나 증빙을 요구할 수 있습니다."],
+      "sourceName": "인천국제공항 기내 반입 금지 물품 안내",
+      "sourceUrl": "https://www.airport.kr",
+      "checkedAt": null,
+      "verified": false
+    },
+    "spray": {
+      "label": "스프레이",
+      "inputs": [{ "key": "ml", "label": "용기당 용량", "unit": "ml", "placeholder": "예: 200" }],
+      "subtypes": [
+        { "value": "toiletry", "label": "화장품·의약용 (헤어스프레이, 데오드란트 등)" },
+        { "value": "other", "label": "그 외 (살충제, 페인트, 가스 등)" }
+      ],
+      "toiletry": { "cabinMaxMl": 100, "checkedMaxMl": 500 },
+      "otherAllowed": false,
+      "notes": ["화장품·의약용 에어로졸은 위탁 시 용기당 500ml, 1인 총량 제한이 있을 수 있습니다."],
+      "sourceName": "국토교통부 항공위험물 운송기준",
+      "sourceUrl": "https://www.molit.go.kr",
+      "checkedAt": null,
+      "verified": false
+    },
+    "sharp": {
+      "label": "날카로운 물품",
+      "subtypes": [
+        { "value": "knife", "label": "칼·커터칼" },
+        { "value": "scissors", "label": "가위" },
+        { "value": "tool", "label": "공구 (드라이버, 렌치 등)" }
+      ],
+      "inputs": [{ "key": "bladeCm", "label": "날 길이 (가위)", "unit": "cm", "placeholder": "예: 5", "onlyFor": "scissors" }],
+      "scissorsCabinMaxBladeCm": 6,
+      "notes": ["기내 반입이 안 되는 물품도 위탁수하물로는 대부분 가능합니다."],
+      "sourceName": "인천국제공항 기내 반입 금지 물품 안내",
+      "sourceUrl": "https://www.airport.kr",
+      "checkedAt": null,
+      "verified": false
+    },
+    "food": {
+      "label": "식품",
+      "subtypes": [
+        { "value": "meat", "label": "육가공품 (소시지, 육포, 햄 등)" },
+        { "value": "fruit_veg", "label": "생과일·채소" },
+        { "value": "liquid_food", "label": "액체·소스류 (김치, 고추장 등)" },
+        { "value": "dry", "label": "건조·포장 과자류" }
+      ],
+      "byCountry": {
+        "JP": {
+          "meatAllowed": false,
+          "fruitVegNeedsCheck": true,
+          "sourceName": "일본 농림수산성 동물검역소 / 식물방역소",
+          "sourceUrl": "https://www.maff.go.jp/aqs/"
+        },
+        "TW": {
+          "meatAllowed": false,
+          "fruitVegNeedsCheck": true,
+          "sourceName": "대만 동식물방역검역서",
+          "sourceUrl": "https://www.aphia.gov.tw/"
+        },
+        "US": {
+          "meatAllowed": false,
+          "fruitVegNeedsCheck": true,
+          "sourceName": "미국 CBP 농축산물 반입 안내",
+          "sourceUrl": "https://www.cbp.gov/travel/clearing-cbp/bringing-agricultural-products-united-states"
+        }
+      },
+      "notes": ["식품 반입은 항공 보안 규정과 별개로 도착 국가 검역 규정을 따릅니다."],
+      "sourceName": "도착 국가 검역 당국",
+      "sourceUrl": null,
+      "checkedAt": null,
+      "verified": false
+    }
+  }
+}

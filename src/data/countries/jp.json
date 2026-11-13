@@ -1,0 +1,63 @@
+{
+  "country": {
+    "code": "JP",
+    "name": "일본",
+    "flag": "🇯🇵",
+    "currency": "JPY",
+    "currencyName": "엔화",
+    "plug": "A타입(11자)",
+    "voltage": "100V",
+    "sampleCity": "오사카",
+    "center": { "lat": 34.6937, "lng": 135.5023 },
+    "entryDocName": "Visit Japan Web QR",
+    "passport": { "minMonths": 0, "from": "exit", "sourceName": "외교부 여권안내", "sourceUrl": "https://www.passport.go.kr" },
+    "embassyName": "주일본 대한민국 대사관",
+    "embassyUrl": "https://overseas.mofa.go.kr/jp-ko/index.do",
+    "weatherName": "일본 기상청",
+    "weatherUrl": "https://www.jma.go.jp/"
+  },
+  "_note": "모든 항목은 초안입니다(verified=false). 공식 출처 확인 후 verified를 true로 바꾸세요. DATA_TODO.md 참고.",
+  "items": [
+    {
+      "id": "jp.visa",
+      "title": "비자 필요 여부 확인",
+      "description": "국적과 체류 목적·기간에 따라 비자가 필요할 수 있습니다. 일본 외무성 또는 주한 일본대사관 안내에서 국적별 요건을 확인하세요.",
+      "byNationality": {
+        "KR": {
+          "description": "대한민국 여권 소지자는 관광 등 단기 체류(최대 90일) 목적이면 비자 없이 입국할 수 있는 것으로 알려져 있습니다. 취업·유학 등 다른 목적이거나 90일을 넘기면 비자가 필요합니다. 출발 전 최신 공지를 확인하세요."
+        }
+      },
+      "dueOffset": 30,
+      "scope": "personal",
+      "category": "entry",
+      "sourceUrl": "https://www.mofa.go.jp/j_info/visit/visa/index.html",
+      "sourceName": "일본 외무성 비자 안내",
+      "verified": false,
+      "required": true
+    },
+    {
+      "id": "jp.entry_card",
+      "title": "입국신고 준비 (Visit Japan Web)",
+      "description": "Visit Japan Web에 여권·항공편·숙소 정보를 등록하면 입국심사와 세관신고용 QR 코드를 미리 받을 수 있습니다. 동반 가족도 등록할 수 있습니다.",
+      "dueOffset": 7,
+      "scope": "personal",
+      "category": "entry",
+      "sourceUrl": "https://www.vjw.digital.go.jp/",
+      "sourceName": "일본 디지털청 Visit Japan Web",
+      "verified": false,
+      "required": true
+    },
+    {
+      "id": "jp.prohibited_items",
+      "title": "반입 금지 품목 확인",
+      "description": "일본은 소시지·육포 등 육가공품, 일부 과일·채소의 반입을 검역 규정으로 제한합니다. 의약품은 종류·수량에 따라 제한될 수 있습니다. 짐 탭에서 보조배터리·액체류 등 항공 반입 규정도 함께 확인하세요.",
+      "dueOffset": 7,
+      "scope": "personal",
+      "category": "customs",
+      "sourceUrl": "https://www.maff.go.jp/aqs/",
+      "sourceName": "일본 농림수산성 동물검역소",
+      "verified": false,
+      "required": true
+    }
+  ]
+}

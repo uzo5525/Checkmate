@@ -1,0 +1,63 @@
+{
+  "country": {
+    "code": "TH",
+    "name": "태국",
+    "flag": "🇹🇭",
+    "currency": "THB",
+    "currencyName": "바트",
+    "plug": "A·B·C·O타입",
+    "voltage": "220V",
+    "sampleCity": "방콕",
+    "center": { "lat": 13.7563, "lng": 100.5018 },
+    "entryDocName": "TDAC(태국 디지털 입국카드) 확인서",
+    "passport": { "minMonths": 6, "from": "entry", "sourceName": "주태국 대한민국 대사관", "sourceUrl": "https://overseas.mofa.go.kr/th-ko/index.do" },
+    "embassyName": "주태국 대한민국 대사관",
+    "embassyUrl": "https://overseas.mofa.go.kr/th-ko/index.do",
+    "weatherName": "태국 기상청",
+    "weatherUrl": "https://www.tmd.go.th/en/"
+  },
+  "_note": "모든 항목은 초안입니다(verified=false). DATA_TODO.md 참고.",
+  "items": [
+    {
+      "id": "th.visa",
+      "title": "비자 필요 여부 확인",
+      "description": "국적과 체류 목적·기간에 따라 비자가 필요할 수 있습니다. 태국 외교부 또는 주한 태국대사관 안내를 확인하세요.",
+      "byNationality": {
+        "KR": {
+          "description": "대한민국 여권 소지자는 관광 목적 단기 체류는 비자 없이 입국할 수 있는 것으로 알려져 있습니다. 무비자 체류 가능 기간은 최근 변경 논의가 있었으니 출발 전 반드시 최신 공지를 확인하세요."
+        }
+      },
+      "dueOffset": 30,
+      "scope": "personal",
+      "category": "entry",
+      "sourceUrl": "https://www.mfa.go.th/en/page/visa",
+      "sourceName": "태국 외교부 비자 안내",
+      "verified": false,
+      "required": true
+    },
+    {
+      "id": "th.entry_card",
+      "title": "입국신고 (TDAC 온라인 제출)",
+      "description": "태국 디지털 입국카드(TDAC)를 입국 전 정해진 기간 안에 온라인으로 제출해야 하는 것으로 알려져 있습니다. 공식 사이트에서만 제출하고, 확인서를 저장해 두세요.",
+      "dueOffset": 3,
+      "scope": "personal",
+      "category": "entry",
+      "sourceUrl": "https://tdac.immigration.go.th/",
+      "sourceName": "태국 이민국 TDAC",
+      "verified": false,
+      "required": true
+    },
+    {
+      "id": "th.prohibited_items",
+      "title": "반입 금지 품목 확인 (전자담배 주의)",
+      "description": "태국은 전자담배의 반입·소지를 금지하고 있어 적발 시 벌금 등 처벌을 받을 수 있는 것으로 알려져 있습니다. 육류·식물 등 검역 대상 품목과 담배·주류 면세 한도도 확인하세요.",
+      "dueOffset": 7,
+      "scope": "personal",
+      "category": "customs",
+      "sourceUrl": "https://www.customs.go.th/",
+      "sourceName": "태국 관세청",
+      "verified": false,
+      "required": true
+    }
+  ]
+}

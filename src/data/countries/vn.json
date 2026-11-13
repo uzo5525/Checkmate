@@ -1,0 +1,63 @@
+{
+  "country": {
+    "code": "VN",
+    "name": "베트남",
+    "flag": "🇻🇳",
+    "currency": "VND",
+    "currencyName": "베트남 동",
+    "plug": "A·C타입",
+    "voltage": "220V",
+    "sampleCity": "다낭",
+    "center": { "lat": 16.0544, "lng": 108.2022 },
+    "entryDocName": "(필요 시) 전자비자 승인서",
+    "passport": { "minMonths": 6, "from": "entry", "sourceName": "주베트남 대한민국 대사관", "sourceUrl": "https://overseas.mofa.go.kr/vn-ko/index.do" },
+    "embassyName": "주베트남 대한민국 대사관",
+    "embassyUrl": "https://overseas.mofa.go.kr/vn-ko/index.do",
+    "weatherName": "베트남 국립기상예보센터",
+    "weatherUrl": "https://nchmf.gov.vn/"
+  },
+  "_note": "모든 항목은 초안입니다(verified=false). DATA_TODO.md 참고.",
+  "items": [
+    {
+      "id": "vn.visa",
+      "title": "비자 필요 여부 확인",
+      "description": "국적과 체류 기간에 따라 비자(전자비자 포함)가 필요할 수 있습니다. 베트남 출입국관리국 전자비자 공식 사이트와 대사관 안내를 확인하세요. 비공식 대행 사이트에 주의하세요.",
+      "byNationality": {
+        "KR": {
+          "description": "대한민국 여권 소지자는 단기 체류(최대 45일)는 비자 없이 입국할 수 있는 것으로 알려져 있습니다. 더 오래 머물면 전자비자(e-Visa)를 미리 받아야 합니다. 무비자 기간·조건은 바뀔 수 있으니 출발 전 확인하세요."
+        }
+      },
+      "dueOffset": 30,
+      "scope": "personal",
+      "category": "entry",
+      "sourceUrl": "https://evisa.gov.vn/",
+      "sourceName": "베트남 출입국관리국 전자비자",
+      "verified": false,
+      "required": true
+    },
+    {
+      "id": "vn.entry_card",
+      "title": "입국 절차·서류 확인",
+      "description": "현재 별도 입국신고서 작성 없이 여권으로 입국심사를 받는 것으로 알려져 있지만, 전자비자를 받았다면 승인서를 출력·저장하세요. 귀국 항공권(출국 증빙)을 요구할 수 있습니다.",
+      "dueOffset": 7,
+      "scope": "personal",
+      "category": "entry",
+      "sourceUrl": "https://overseas.mofa.go.kr/vn-ko/index.do",
+      "sourceName": "주베트남 대한민국 대사관",
+      "verified": false,
+      "required": true
+    },
+    {
+      "id": "vn.prohibited_items",
+      "title": "반입 금지·신고 품목 확인",
+      "description": "일정 금액 이상의 외화·고가품은 세관 신고 대상일 수 있고, 전자담배 등 일부 품목은 반입이 제한될 수 있습니다. 육류·과일 등 검역 대상 품목도 확인하세요.",
+      "dueOffset": 7,
+      "scope": "personal",
+      "category": "customs",
+      "sourceUrl": "https://www.customs.gov.vn/",
+      "sourceName": "베트남 세관",
+      "verified": false,
+      "required": true
+    }
+  ]
+}

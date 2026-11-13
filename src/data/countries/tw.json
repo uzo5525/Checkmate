@@ -1,0 +1,63 @@
+{
+  "country": {
+    "code": "TW",
+    "name": "대만",
+    "flag": "🇹🇼",
+    "currency": "TWD",
+    "currencyName": "대만 달러",
+    "plug": "A·B타입(11자)",
+    "voltage": "110V",
+    "sampleCity": "타이베이",
+    "center": { "lat": 25.033, "lng": 121.5654 },
+    "entryDocName": "입국신고서(온라인 제출 확인)",
+    "passport": { "minMonths": 6, "from": "entry", "sourceName": "주타이베이 대한민국 대표부", "sourceUrl": "https://overseas.mofa.go.kr/tw-ko/index.do" },
+    "embassyName": "주타이베이 대한민국 대표부",
+    "embassyUrl": "https://overseas.mofa.go.kr/tw-ko/index.do",
+    "weatherName": "대만 중앙기상서",
+    "weatherUrl": "https://www.cwa.gov.tw/eng/"
+  },
+  "_note": "모든 항목은 초안입니다(verified=false). DATA_TODO.md 참고.",
+  "items": [
+    {
+      "id": "tw.visa",
+      "title": "비자 필요 여부 확인",
+      "description": "국적과 체류 목적·기간에 따라 비자가 필요할 수 있습니다. 대만 외교부 영사사무국 안내를 확인하세요.",
+      "byNationality": {
+        "KR": {
+          "description": "대한민국 여권 소지자는 관광 등 단기 체류(최대 90일)는 비자 없이 입국할 수 있는 것으로 알려져 있습니다. 출발 전 최신 공지를 확인하세요."
+        }
+      },
+      "dueOffset": 30,
+      "scope": "personal",
+      "category": "entry",
+      "sourceUrl": "https://www.boca.gov.tw/",
+      "sourceName": "대만 외교부 영사사무국",
+      "verified": false,
+      "required": true
+    },
+    {
+      "id": "tw.entry_card",
+      "title": "입국신고서 온라인 제출",
+      "description": "대만 이민서 온라인 입국신고서를 미리 제출하면 입국 시 종이 신고서를 쓰지 않아도 되는 것으로 알려져 있습니다. 숙소 주소를 준비하세요.",
+      "dueOffset": 3,
+      "scope": "personal",
+      "category": "entry",
+      "sourceUrl": "https://niaspeedy.immigration.gov.tw/webacard/",
+      "sourceName": "대만 이민서 온라인 입국신고",
+      "verified": false,
+      "required": true
+    },
+    {
+      "id": "tw.prohibited_items",
+      "title": "반입 금지 품목 확인 (육류 고액 벌금 주의)",
+      "description": "대만은 아프리카돼지열병 방역을 위해 돼지고기 등 육가공품 반입을 엄격히 금지하고, 적발 시 고액의 벌금을 부과하는 것으로 알려져 있습니다. 라면 스프·소시지·육포 등 육류 성분 식품도 확인하세요.",
+      "dueOffset": 7,
+      "scope": "personal",
+      "category": "customs",
+      "sourceUrl": "https://www.aphia.gov.tw/",
+      "sourceName": "대만 동식물방역검역서",
+      "verified": false,
+      "required": true
+    }
+  ]
+}
